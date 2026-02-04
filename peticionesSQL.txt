@@ -1,0 +1,22 @@
+****COMANDO CREACION TABLA PELICULA************
+
+create table pelicula(
+idPelicula int primary key,
+tituloPelicula varchar(30),
+añoEstreno int,
+duracion int,
+sinopsis varchar(100),
+urlImagen varchar(400),
+cantidadEntradasDisponibles int,
+precio int);
+
+
+*********inserts de pelis****************
+
+INSERT INTO pelicula (idPelicula, tituloPelicula, añoEstreno, duracion, sinopsis, urlImagen, cantidadEntradasDisponibles,precio)
+VALUES 
+(1, 'Aida', 2025, 105, 'Los vecinos de Esperanza Sur saltan a la gran pantalla.', 'C:\AccesoADatos\imagenes\aida.jpg', 50,8),
+(2, 'Avatar', 2009, 162, 'Un marine en el planeta Pandora.', 'C:\AccesoADatos\imagenes\avatar.jpg', 40,10),
+(3, 'La asistenta', 2021, 120, 'Una madre soltera limpia casas para sobrevivir.', 'C:\AccesoADatos\imagenes\laAsistenta.jpg', 30,8),
+(4, 'Titanic', 1997, 195, 'Romance tragico en el famoso transatlantico.', 'C:\AccesoADatos\imagenes\titanic.jpg', 25,8),
+(5, 'Jurassic Park', 1993, 127, 'Dinosaurios clonados escapan en un parque.', 'C:\AccesoADatos\imagenes\jurassicpark.png', 45,8);
